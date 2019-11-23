@@ -1,0 +1,62 @@
+{
+  "name": "csv-downloader",
+  "version": "1.0.0",
+  "description": "Help to download csv files through HTML5 browser and save as local file",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build --out-dir ./dist --out-file csv-downloader.js index.js",
+    "docs": "jsdoc --configure jsdoc.json --verbose",
+    "lint": "eslint .",
+    "test": "parcel test/test.html --open"
+  },
+  "keywords": [
+    "CSV",
+    "Web",
+    "Utility"
+  ],
+  "author": "Koji Takami <vzg0356@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "jsdoc": "^3.6.3",
+    "minami": "^1.2.3",
+    "mocha": "^6.2.2",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "text-chopper": "^1.0.1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "mocha": true
+    },
+    "globals": {
+      "$": true,
+      "ArrayBuffer": true
+    },
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "valid-jsdoc": "warn"
+    },
+    "extends": "eslint:recommended"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takamin/csv-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/takamin/csv-downloader/issues"
+  },
+  "homepage": "https://github.com/takamin/csv-downloader#readme"
+}
