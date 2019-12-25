@@ -3,10 +3,14 @@ csv-downloader
 
 A helper for a HTML5 web app to download a CSV file and save.
 
-A huge CSV file will be split to several files.
-The byte size of the splitted each chunk is able to be specified.
-This feature is needed by a limitation of a Blob object MAX size.
-It is said that the MAX size of a Blob object is about 500 MB.
+Currently, following splitting feature does not work.
+Do not download large CSV file that is larger than about 400 MB.
+Browser might crash.
+
+~~A huge CSV file will be split to several files.~~
+~~The byte size of the splitted each chunk is able to be specified.~~
+~~This feature is needed by a limitation of a Blob object MAX size.~~
+~~It is said that the MAX size of a Blob object is about 500 MB.~~
 
 ## USAGE
 
